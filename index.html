@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+
+#header-img {
+  width: 450px;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0px;
+  }
+
+section {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  }
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.box > div {
+  background-color: coral;
+  width: 200px;
+  /* margin: 300px; */
+  text-align: center;
+  /* line-height: 10px; */
+  font-size: 16px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+body {
+  font-family: san-serif;
+  background-color: coral;
+}
+.nav-link {
+  padding: 20px;
+  margin: 10px;
+  font-size: 16pt;
+
+  }
+
+
+</style>
+  </head>
+<body>
+  <center>
+    <h1>Karma Wheel Co.</h1>
+      <header id="header">
+        <img id="header-img" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/79708628_110287760465001_4914187157859467264_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=6e5ad9&_nc_ohc=jCyvZoSnewQAX-vkdPD&_nc_ht=scontent-ort2-1.xx&oh=e6f9d106a1e090fdb2d8a898aba06f14&oe=609BF1E9"/>
+
+
+      <nav id=nav-bar>
+          <a class="nav-link" href="#learn-more">Learn More</a>
+          <a class="nav-link" href="#request-coupon">Request Coupon</a>
+          <a class="nav-link" href="#buy-on-karma">Buy on Karma Wheel Co</a>
+      </nav>
+
+    </header>
+</center>
+
+<center>
+  <section id="learn-more">
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/o7C4Vk8U82U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+</center>
+
+    <section id="request-coupon">
+<center>
+  <h2> Request a coupon</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" type="email" placeholder="you@email.com" name="email"></input>
+      <input id="submit" type="submit"></input>
+    </form>
+</center>
+  </section>
+
+  <section id="buy-on-karma">
+      <div class="box">
+      <div><a href="https://karmawheelco.com/">Buy on Karma</a></div>
+      <div><a href="https://shop.ccs.com/skateboards/skateboard-wheels">Buy on CCS</a></div>
+      <div><a href="https://www.amazon.com/skateboard-wheels/b?ie=UTF8&node=3416251">Buy on Amazon</a></div>
+      </div>
+
+
+  </section>
+</center>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+</html>
